@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *,
+    *::after,
+    *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    }
+
+    html {
+    box-sizing: border-box;
+    }
+
+    body {
+    font-family: sans-serif;
+    font-weight: 300;
+    }
+
+    .hero{
+        height: 100vh;
+
+        background: url('./images/Background_1.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .logoContainer{
+        height: 100px;
+        margin-bottom: 30px;
+    }
+    .logo{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+    .title,
+    .date{
+        color: white;
+        text-transform: uppercase;
+    }
+    .title{
+        font-size: 120px;
+        font-weight: 900;
+    }
+    .date{
+        font-size: 50px;
+    }
+
+    /* Orange corner section */
+    .orangeCorner{
+        padding: 100px 200px 100px 50px;
+        display: grid;
+        grid-template-columns: [col-sm-start] 2fr [col-sm-end col-lg-start] 5fr [col-lg-end];
+        grid-template-rows: repeat(2, [row-start] max-content [row-end]);
+        gap: 50px;
+    }
+    .ocImgContainer{
+        grid-column: col-sm-start / col-sm-end;
+        grid-row: row-start 2 / row-end 2;
+    }
+    .ocImg{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        object-position: top;
+    }
+    .ocContent{
+        grid-column: col-lg-start / col-lg-end;
+        grid-row: row-start 2 / row-end 2;
+    }
+    .ocTitle{
+        grid-column: col-lg-start / col-lg-end;
+        grid-row: row-start 1 / row-end 1;
+
+        font-size: 70px;
+        font-weight: 900;
+        line-height: 1.2;
+        text-transform: capitalize;
+        color: #C82159;
+    }
+    .ocParag{
+        font-size: 30px;
+        line-height: 1.4;
+    }
+    .ocParag:not(:last-child){
+        margin-bottom: 30px;
+    }
+
+</style>
+<body>
+    <div class="hero">
+        <div class="logoContainer">
+            <img class="logo" src="./images/yyv-logo.png" alt="">
+        </div>
+        <h1 class="title">quarterly newsletter</h1>
+        <span class="date">april-june, 2023</span>
+    </div>
+    <div class="orangeCorner">
+        <div class="ocImgContainer">
+            <img class="ocImg" src="./images//Slide_2-Image.png" alt="">
+        </div>
+        <h2 class="ocTitle">Orange Corners Bangladesh Incubation Programme</h2>
+        <div class="ocContent">
+            <p class="ocParag">Orange Corners Bangladesh Incubation programme is designed 
+                for aspiring Bangladeshi youth with sustainable business 
+                solutions to solve local challenges and contribute to the 
+                Sustainable Development Goals. In May 2023, YY Ventures 
+                launched the applications for the first cohort of the Incubation 
+                Programme. After a month-long campaign, we received a total of 
+                229 applications. The top 33 teams were invited into a 2-day 
+                selection boot camp on June 25-26, 2023, at the Orange Coners 
+                space at Impact Hub Dhaka. Day 01 of the boot camp consisted of 
+                capacity-building workshops and an orientation to funding 
+                opportunities available through the Orange Corners Bangladesh 
+                programme designed to help them prepare a business pitch. The 
+                participants pitched their business ideas in two separate pitching 
+                sessions, ran simultaneously in 15-minuteslots throughouttheday, 
+                competing for a spot in Cohort 1. After the pitching session, 15 
+                brilliant teams were onboarded into the Incubation Programme. 
+                To learn more about these teams, <a href="#" target="__blank">click here</a>.
+            </p>
+            <p class="ocParag">Visit the website to learn more about Orange Corners 
+                Bangladesh.(
+                <a href="https://www.orangecorners.com/country/bangladesh/" target="__blank">
+                    https://www.orangecorners.com/country/bangladesh/</a>)
+            </p>
+        </div>
+    </div>
+    <div class="sfdc">
+        <div class="sfdcContent">
+            <h2 class="sfdcTitle">Social Fiction Design Competition</h2>
+            <p class="sfdcParag">The Social Fiction Design Competition invited 
+                visionaries and dreamers all over the world with a 
+                knack for creative writing to share how they wish to 
+                see the world and the lives of young people in the year 
+                2050, with a chance to win USD 10,000. This served as 
+                a global platform encouraging Social Fiction to 
+                imagine a world we want to live in, a world free of 
+                social and environmental injustices that plague our 
+                communities. After receiving 656 applications from 
+                across 70+ countries, the top 12 teams were invited for 
+                a workshop on ‘Crafting Your Story’ on June 13, 2023, 
+                and the participants then got an opportunity to 
+                showcase their stories at the final story telling session 
+                on June 23, 2023.
+            </p>
+        </div>
+        <div class="sfceImgContainer">
+            <div class="imgContainer">
+                <img class="sfdcImg" src="./images/Slide_3-Image.png" alt="">
+            </div>
+            <div class="layoutContainer">
+                <img class="layout" src="./images/Tree-Leaf_1.png" alt="">
+            </div>
+            <div class="sfdcBox"></div>
+        </div>
+    </div>
+</body>
+</html>
